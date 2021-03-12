@@ -1,0 +1,39 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^home/$ pages/page_loader.php?target=home.php
+RewriteRule ^template/$ pages/page_loader.php?target=template.php
+RewriteRule ^problem/$ pages/page_loader.php?target=problem.php
+RewriteRule ^problem/([0-9]+)$ pages/page_loader.php?target=problem_id.php&id=$1 [L]
+RewriteRule ^problem/create$ pages/page_loader.php?target=problem_edit.php [L]
+RewriteRule ^problem/edit-([0-9]+)$ pages/page_loader.php?target=problem_edit.php&id=$1 [L]
+RewriteRule ^submission/$ pages/page_loader.php?target=submission.php
+RewriteRule ^submission/([0-9]+)$ pages/page_loader.php?target=submission.php&id=$1 [L]
+RewriteRule ^contest/$ pages/page_loader.php?target=contest.php
+RewriteRule ^contest/([0-9]+)$ pages/page_loader.php?target=contest.php&id=$1 [L]
+RewriteRule ^scoreboard/$ pages/page_loader.php?target=contest_scoreboard.php
+RewriteRule ^scoreboard/([0-9]+)$ pages/page_loader.php?target=contest_scoreboard.php&id=$1 [L]
+RewriteRule ^profile/$ pages/page_loader.php?target=profile.php
+RewriteRule ^profile/([0-9]+)$ pages/page_loader.php?target=profile.php&id=$1 [L]
+RewriteRule ^editorial/$ pages/page_loader.php?target=editorial.php
+RewriteRule ^editorial/([0-9]+)$ pages/page_loader.php?target=editorial_id.php&id=$1 [L]
+RewriteRule ^editorial/search=(.*)$ pages/page_loader.php?target=editorial.php&search=$1 [L]
+RewriteRule ^editorial/category=(.*)$ pages/page_loader.php?target=editorial.php&category=$1 [L]
+RewriteRule ^editorial/create$ pages/page_loader.php?target=editorial_edit.php [L]
+RewriteRule ^editorial/edit-([0-9]+)$ pages/page_loader.php?target=editorial_edit.php&id=$1 [L]
+RewriteRule ^donation/$ pages/page_loader.php?target=donation.php [L]
+RewriteRule ^forgetpassword/$ pages/page_loader.php?target=password_forget.php [L]
+RewriteRule ^resetpassword/$ pages/page_loader.php?target=password_reset.php [L]
+
+RewriteRule ^api/(.*)$ static/functions/api/$1.php
+
+RewriteRule ^doc/([0-9]+)-(.*)$ file/judge/prob/$1/$2.pdf
+
+RewriteRule ^login/$ pages/page_loader.php?target=login.php
+RewriteRule ^logout/$ static/functions/auth/logout.php
+
+Options +FollowSymlinks
+Options +Indexes
+IndexOptions +FancyIndexing
+DirectoryIndex .index.php .index.html index.php index.html .redirect.html redirect.html landing.html landing.php .landing.html .landing.php .redirect.php redirect.php

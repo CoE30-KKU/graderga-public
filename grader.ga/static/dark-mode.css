@@ -1,0 +1,164 @@
+[data-theme="dark"] {
+    background-color: #111;
+    color: white !important;
+}
+
+[data-theme="dark"] .bg-light {
+    background-color: #333 !important;
+}
+
+[data-theme="dark"] .bg-white {
+    background-color: #000 !important;
+}
+
+[data-theme="dark"] .bg-black {
+    background-color: #eee !important;
+}
+
+[data-theme="dark"] .indexNews {
+    background-color: #151515 !important;
+}
+
+[data-theme="dark"] .input-group-text,
+[data-theme="dark"] .file-path,
+[data-theme="dark"] .form-control {
+    color: white !important;
+    background-color: #333;
+}
+
+[data-theme="dark"] .note-editable,
+[data-theme="dark"] .note-dropdown-menu {
+    background-color: #1c1c1c !important;
+}
+
+
+[data-theme="dark"] .note-current-fontname {
+    color: #1c1c1c !important;
+}
+
+[data-theme="dark"] .card,
+[data-theme="dark"] .card-body,
+[data-theme="dark"] .input-group-text,
+[data-theme="dark"] .modal-body {
+    background-color: #1c1c1c;
+}
+
+[data-theme="dark"] .modal-content {
+    background-color: #0e0e0e;
+}
+
+[data-theme="dark"] .card-body-cascade {
+    background-color: #1c1c1c !important;
+}
+
+[data-theme="dark"] .modal-header,
+[data-theme="dark"] .modal-footer {
+    background-color: #000000;
+}
+
+[data-theme="dark"] hr {
+    border-top: 1px solid white;
+  }
+
+[data-theme="dark"] .dropdown-content span {
+    color: #000000 !important;
+}
+
+[data-theme="dark"] .container {
+    background-color: rgba(30, 30, 30, 0);
+}
+
+[data-theme="dark"] a {
+    color:#d42225;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] tr a {
+    color:#d42225 !important;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] a:hover {
+    color: #df797b;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] tr a:hover {
+    color: #df797b !important;
+    transition: 0.3s;
+}
+
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #292929 !important;
+    border-radius: 8px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar {
+    width: 8px;
+    background-color: #292929 !important;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #9a1518;
+}
+
+[data-theme="dark"] .pagination > li > a
+{
+    color: white !important;
+}
+
+[data-theme="dark"] .pagination > li > a:focus,
+[data-theme="dark"] .pagination > li > a:hover,
+[data-theme="dark"] .pagination > li > span:focus,
+[data-theme="dark"] .pagination > li > span:hover
+{
+    color: #5a5a5a !important;
+    background-color: #eee !important;
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] span {
+    color: white;
+}
+
+[data-theme="dark"] p,
+[data-theme="dark"] li,
+[data-theme="dark"] ul,
+[data-theme="dark"] table,
+[data-theme="dark"] blockquote {
+    color: #dddddd !important;
+    transition: 0.3;
+}
+
+[data-theme="dark"] .table-hover tr:hover{
+    color: white;
+    background-color: #333;
+    transition: 0.3;
+}
+
+[data-theme="dark"] .carousel h1,
+[data-theme="dark"] .carousel h2,
+[data-theme="dark"] .carousel h3,
+[data-theme="dark"] .carousel h4,
+[data-theme="dark"] .carousel h5,
+[data-theme="dark"] .carousel p {
+    color: white;
+}
+
+[data-theme="dark"] .navbar {
+    background-color: #111 !important;
+}
+
+@media only screen and (max-width: 768px) {
+    [data-theme="dark"] .navbar {
+        background-color: #111 !important;
+    }
+}
